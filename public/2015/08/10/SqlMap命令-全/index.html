@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>SqlMap命令-全 | FengGe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Options（选项）
+
+
+参数
+说明
+
+
+
+
+--version
+显示程序的版本号并退出
+
+
+-h, --help
+显示此帮助消息并退出
+
+
+-v VERBOSE
+详细级别：0-6（默认为1）
+
+
+
+Target（目标）以下至少需要设置其中一个选项，设置目标URL。 
+
+
+
+参数
+说明
+
+
+
+
+-d DIRECT
+直接连接到数据库。
+
+
+-u URL, --url=URL
+目标URL。
+
+
+-l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SqlMap命令-全">
+<meta property="og:url" content="http://yoursite.com/2015/08/10/SqlMap命令-全/index.html">
+<meta property="og:site_name" content="FengGe">
+<meta property="og:description" content="Options（选项）
+
+
+参数
+说明
+
+
+
+
+--version
+显示程序的版本号并退出
+
+
+-h, --help
+显示此帮助消息并退出
+
+
+-v VERBOSE
+详细级别：0-6（默认为1）
+
+
+
+Target（目标）以下至少需要设置其中一个选项，设置目标URL。 
+
+
+
+参数
+说明
+
+
+
+
+-d DIRECT
+直接连接到数据库。
+
+
+-u URL, --url=URL
+目标URL。
+
+
+-l">
+<meta property="og:updated_time" content="2015-08-10T03:50:07.817Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SqlMap命令-全">
+<meta name="twitter:description" content="Options（选项）
+
+
+参数
+说明
+
+
+
+
+--version
+显示程序的版本号并退出
+
+
+-h, --help
+显示此帮助消息并退出
+
+
+-v VERBOSE
+详细级别：0-6（默认为1）
+
+
+
+Target（目标）以下至少需要设置其中一个选项，设置目标URL。 
+
+
+
+参数
+说明
+
+
+
+
+-d DIRECT
+直接连接到数据库。
+
+
+-u URL, --url=URL
+目标URL。
+
+
+-l">
+  
+    <link rel="alternative" href="/atom.xml" title="FengGe" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://i3.tietuku.com/11f86a6e7f812e32.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">FengGe</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">世界有你更精彩</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/LoadRuner/" style="font-size: 10px;">LoadRuner</a> <a href="/tags/SQLMAP/" style="font-size: 10px;">SQLMAP</a> <a href="/tags/XSS/" style="font-size: 10px;">XSS</a> <a href="/tags/django/" style="font-size: 10px;">django</a> <a href="/tags/findpassword/" style="font-size: 10px;">findpassword</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">FengGe</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://i3.tietuku.com/11f86a6e7f812e32.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">FengGe</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">世界有你更精彩</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-SqlMap命令-全" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/10/SqlMap命令-全/" class="article-date">
+  	<time datetime="2015-08-10T03:29:18.000Z" itemprop="datePublished">2015-08-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      SqlMap命令-全
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQLMAP/">SQLMAP</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Options（选项）">Options（选项）</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--version</code></td>
+<td>显示程序的版本号并退出</td>
+</tr>
+<tr>
+<td><code>-h, --help</code></td>
+<td>显示此帮助消息并退出</td>
+</tr>
+<tr>
+<td><code>-v VERBOSE</code></td>
+<td>详细级别：0-6（默认为1）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Target（目标）">Target（目标）</h2><pre><code>以下至少需要设置其中一个选项，设置目标<span class="built_in">URL</span>。 
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-d DIRECT</code></td>
+<td>直接连接到数据库。</td>
+</tr>
+<tr>
+<td><code>-u URL, --url=URL</code></td>
+<td>目标URL。</td>
+</tr>
+<tr>
+<td><code>-l LIST</code></td>
+<td>从Burp或WebScarab代理的日志中解析目标。</td>
+</tr>
+<tr>
+<td><code>-r REQUESTFILE</code></td>
+<td>从一个文件中载入HTTP请求。</td>
+</tr>
+<tr>
+<td><code>-g GOOGLEDORK</code></td>
+<td>处理Google dork的结果作为目标</td>
+<td>URL。 </td>
+</tr>
+<tr>
+<td><code>-c CONFIGFILE</code></td>
+<td>从INI配置文件中加载选项。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Request（请求）">Request（请求）</h2><pre><code>这些选项可以用来指定如何连接到目标<span class="built_in">URL</span>。 
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--data=DATA</code></td>
+<td>通过POST发送的数据字符串</td>
+</tr>
+<tr>
+<td><code>--cookie=COOKIE</code></td>
+<td>HTTP Cookie头</td>
+</tr>
+<tr>
+<td><code>--cookie-urlencode</code></td>
+<td>URL 编码生成的cookie注入</td>
+</tr>
+<tr>
+<td><code>--drop-set-cookie</code></td>
+<td>忽略响应的Set - Cookie头信息</td>
+</tr>
+<tr>
+<td><code>--user-agent=AGENT</code></td>
+<td>指定  HTTP User - Agent头</td>
+</tr>
+<tr>
+<td><code>--random-agent</code></td>
+<td>使用随机选定的HTTP User - Agent头</td>
+</tr>
+<tr>
+<td><code>--referer=REFERER</code></td>
+<td>指定  HTTP Referer头</td>
+</tr>
+<tr>
+<td><code>--headers=HEADERS</code></td>
+<td>换行分开，加入其他的HTTP头</td>
+</tr>
+<tr>
+<td><code>--auth-type=ATYPE</code></td>
+<td>HTTP身份验证类型（基本，摘要或NTLM）(Basic, Digest or NTLM)</td>
+</tr>
+<tr>
+<td><code>--auth-cred=ACRED</code></td>
+<td>HTTP身份验证凭据（用户名:密码） </td>
+</tr>
+<tr>
+<td><code>--auth-cert=ACERT</code></td>
+<td>HTTP认证证书（key_file，cert_file）</td>
+</tr>
+<tr>
+<td><code>--proxy=PROXY</code></td>
+<td>使用HTTP代理连接到目标URL  <code>--proxy http://127.0.0.1:8888</code></td>
+</tr>
+<tr>
+<td><code>--proxy-cred=PCRED</code></td>
+<td>HTTP代理身份验证凭据（用户名：密码）</td>
+</tr>
+<tr>
+<td><code>--ignore-proxy</code></td>
+<td>忽略系统默认的HTTP代理</td>
+</tr>
+<tr>
+<td><code>--delay=DELAY</code></td>
+<td>在每个HTTP请求之间的延迟时间，单位为秒  <code>--delay 0.5</code></td>
+</tr>
+<tr>
+<td><code>--timeout=TIMEOUT</code></td>
+<td>等待连接超时的时间（默认为30秒）</td>
+</tr>
+<tr>
+<td><code>--retries=RETRIES</code></td>
+<td>连接超时后重新连接的时间（默认3）</td>
+</tr>
+<tr>
+<td><code>--scope=SCOPE</code></td>
+<td>从所提供的代理日志中过滤器目标的正则表达式</td>
+</tr>
+<tr>
+<td><code>--safe-url=SAFURL</code></td>
+<td>在测试过程中经常访问的url地址</td>
+</tr>
+<tr>
+<td><code>--safe-freq=SAFREQ</code></td>
+<td>两次访问之间测试请求，给出安全的URL</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Optimization（优化）">Optimization（优化）</h2><pre><code>这些选项可用于优化SqlMap的性能。
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-o</code></td>
+<td>开启所有优化开关</td>
+</tr>
+<tr>
+<td><code>--predict-output</code></td>
+<td>预测常见的查询输出</td>
+</tr>
+<tr>
+<td><code>--keep-alive</code></td>
+<td>使用持久的HTTP（S）连接</td>
+</tr>
+<tr>
+<td><code>--null-connection</code></td>
+<td>从没有实际的HTTP响应体中检索页面长度</td>
+</tr>
+<tr>
+<td><code>--threads=THREADS</code></td>
+<td>最大的HTTP（S）请求并发量（默认为1）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Injection（注入）">Injection（注入）</h2><pre><code>这些选项可以用来指定测试哪些参数，  提供自定义的注入payloads和可选篡改脚本。 
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-p TESTPARAMETER</code></td>
+<td>可测试的参数（S）</td>
+</tr>
+<tr>
+<td><code>--dbms=DBMS</code></td>
+<td>强制后端的DBMS为此值 如：–dbms “Mysql”</td>
+</tr>
+<tr>
+<td><code>--os=OS</code></td>
+<td>强制后端的DBMS操作系统为这个值</td>
+</tr>
+<tr>
+<td><code>--prefix=PREFIX</code></td>
+<td>注入payload字符串前缀</td>
+</tr>
+<tr>
+<td><code>--suffix=SUFFIX</code></td>
+<td>注入payload字符串后缀</td>
+</tr>
+<tr>
+<td><code>--tamper=TAMPER</code></td>
+<td>使用给定的脚本（S）篡改注入数据</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Detection（检测）">Detection（检测）</h2><pre><code>这些选项可以用来指定在SQL盲注时如何解析和比较HTTP响应页面的内容。 
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--level=LEVEL</code></td>
+<td>执行测试的等级（1-5，默认为1）</td>
+</tr>
+<tr>
+<td><code>--risk=RISK</code></td>
+<td>执行测试的风险（0-3，默认为1）</td>
+</tr>
+<tr>
+<td><code>--string=STRING</code></td>
+<td>查询时有效时在页面匹配字符串</td>
+</tr>
+<tr>
+<td><code>--regexp=REGEXP</code></td>
+<td>查询时有效时在页面匹配正则表达式</td>
+</tr>
+<tr>
+<td><code>--text-only</code></td>
+<td>仅基于在文本内容比较网页</td>
+</tr>
+</tbody>
+</table>
+<p>  Techniques（技巧）： </p>
+<pre><code>这些选项可用于调整具体的SQL注入测试。 
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--technique=TECH</code></td>
+<td>SQL注入技术测试（默认BEUST）</td>
+</tr>
+<tr>
+<td><code>--time-sec=TIMESEC</code></td>
+<td>DBMS响应的延迟时间（默认为5秒）</td>
+</tr>
+<tr>
+<td><code>--union-cols=UCOLS</code></td>
+<td>定列范围用于测试UNION查询注入</td>
+</tr>
+<tr>
+<td><code>--union-char=UCHAR</code></td>
+<td>用于暴力猜解列数的字符</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Fingerprint（指纹）">Fingerprint（指纹）</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-f, --fingerprint</code></td>
+<td>执行检查广泛的DBMS版本指纹</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Enumeration（枚举）">Enumeration（枚举）</h2><pre><code>这些选项可以用来列举后端数据库管理系统的信息、表中的结构和数据。此外，您还可以运行您自己的SQL语句。
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-b, --banner</code></td>
+<td>检索数据库管理系统的标识</td>
+</tr>
+<tr>
+<td><code>--current-user</code></td>
+<td>检索数据库管理系统当前用户</td>
+</tr>
+<tr>
+<td><code>--current-db</code></td>
+<td>检索数据库管理系统当前数据库</td>
+</tr>
+<tr>
+<td><code>--is-dba</code></td>
+<td>检测DBMS当前用户是否DBA</td>
+</tr>
+<tr>
+<td><code>--users</code></td>
+<td>枚举数据库管理系统用户 </td>
+</tr>
+<tr>
+<td><code>--passwords</code></td>
+<td>枚举数据库管理系统用户密码哈希 </td>
+</tr>
+<tr>
+<td><code>--privileges</code></td>
+<td>枚举数据库管理系统用户的权限 </td>
+</tr>
+<tr>
+<td><code>--roles</code></td>
+<td>枚举数据库管理系统用户的角色 </td>
+</tr>
+<tr>
+<td><code>--dbs</code></td>
+<td>枚举数据库管理系统数据库 </td>
+</tr>
+<tr>
+<td><code>--tables</code></td>
+<td>枚举的DBMS数据库中的表 </td>
+</tr>
+<tr>
+<td><code>--columns</code></td>
+<td>枚举DBMS数据库表列 </td>
+</tr>
+<tr>
+<td><code>--dump</code></td>
+<td>转储数据库管理系统的数据库中的表项 </td>
+</tr>
+<tr>
+<td><code>--dump-all</code></td>
+<td>转储所有的DBMS数据库表中的条目 </td>
+</tr>
+<tr>
+<td><code>--search</code></td>
+<td>搜索列（S），表（S）和/或数据库名称（S） </td>
+</tr>
+<tr>
+<td><code>-D DB</code></td>
+<td>要进行枚举的数据库名 </td>
+</tr>
+<tr>
+<td><code>-T TBL</code></td>
+<td>要进行枚举的数据库表 </td>
+</tr>
+<tr>
+<td><code>-C COL</code></td>
+<td>要进行枚举的数据库列 </td>
+</tr>
+<tr>
+<td><code>-U USER</code></td>
+<td>用来进行枚举的数据库用户 </td>
+</tr>
+<tr>
+<td><code>--exclude-sysdbs</code></td>
+<td>枚举表时排除系统数据库 </td>
+</tr>
+<tr>
+<td><code>--start=LIMITSTART</code></td>
+<td>第一个查询输出进入检索 </td>
+</tr>
+<tr>
+<td><code>--stop=LIMITSTOP</code></td>
+<td>最后查询的输出进入检索 </td>
+</tr>
+<tr>
+<td><code>--first=FIRSTCHAR</code></td>
+<td>第一个查询输出字的字符检索 </td>
+</tr>
+<tr>
+<td><code>--last=LASTCHAR</code></td>
+<td>最后查询的输出字字符检索 </td>
+</tr>
+<tr>
+<td><code>--sql-query=QUERY</code></td>
+<td>要执行的SQL语句 </td>
+</tr>
+<tr>
+<td><code>--sql-shell</code></td>
+<td>提示交互式SQL的shell </td>
+</tr>
+</tbody>
+</table>
+<h2 id="Brute_force（蛮力）">Brute force（蛮力）</h2><pre><code>这些选项可以被用来运行蛮力检查。 
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--common-tables</code></td>
+<td>检查存在共同表</td>
+</tr>
+<tr>
+<td><code>--common-columns</code></td>
+<td>检查存在共同列</td>
+</tr>
+</tbody>
+</table>
+<p>  User-defined function injection（用户自定义函数注入）：</p>
+<pre><code>这些选项可以用来创建用户自定义函数。 
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--udf-inject</code></td>
+<td>注入用户自定义函数</td>
+</tr>
+<tr>
+<td><code>--shared-lib=SHLIB</code></td>
+<td>共享库的本地路径</td>
+</tr>
+</tbody>
+</table>
+<h2 id="File_system_access（访问文件系统）">File system access（访问文件系统）</h2><pre><code>这些选项可以被用来访问后端数据库管理系统的底层文件系统。 
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--file-read=RFILE</code></td>
+<td>从后端的数据库管理系统文件系统读取文件</td>
+</tr>
+<tr>
+<td><code>--file-write=WFILE</code></td>
+<td>编辑后端的数据库管理系统文件系统上的本地文件</td>
+</tr>
+<tr>
+<td><code>--file-dest=DFILE</code></td>
+<td>后端的数据库管理系统写入文件的绝对路径</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Operating_system_access（操作系统访问）">Operating system access（操作系统访问）</h2><pre><code>这些选项可以用于访问后端数据库管理系统的底层操作系统。 
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--os-cmd=OSCMD</code></td>
+<td>执行操作系统命令 </td>
+</tr>
+<tr>
+<td><code>--os-shell</code></td>
+<td>交互式的操作系统的shell </td>
+</tr>
+<tr>
+<td><code>--os-pwn</code></td>
+<td>获取一个OOB shell，meterpreter或VNC </td>
+</tr>
+<tr>
+<td><code>--os-smbrelay</code></td>
+<td>一键获取一个OOB shell，meterpreter或VNC </td>
+</tr>
+<tr>
+<td><code>--os-bof</code></td>
+<td>存储过程缓冲区溢出利用 </td>
+</tr>
+<tr>
+<td><code>--priv-esc</code></td>
+<td>数据库进程用户权限提升 </td>
+</tr>
+<tr>
+<td><code>--msf-path=MSFPATH</code></td>
+<td>Metasploit Framework本地的安装路径 </td>
+</tr>
+<tr>
+<td><code>--tmp-path=TMPPATH</code></td>
+<td>远程临时文件目录的绝对路径 </td>
+</tr>
+</tbody>
+</table>
+<h2 id="Windows注册表访问">Windows注册表访问</h2><pre><code>这些选项可以被用来访问后端数据库管理系统Windows注册表。 
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--reg-read</code></td>
+<td>读一个Windows注册表项值</td>
+</tr>
+<tr>
+<td><code>--reg-add</code></td>
+<td>写一个Windows注册表项值数据</td>
+</tr>
+<tr>
+<td><code>--reg-del</code></td>
+<td>删除Windows注册表键值</td>
+</tr>
+<tr>
+<td><code>--reg-key=REGKEY</code></td>
+<td>Windows注册表键</td>
+</tr>
+<tr>
+<td><code>--reg-value=REGVAL</code></td>
+<td>Windows注册表项值</td>
+</tr>
+<tr>
+<td><code>--reg-data=REGDATA</code></td>
+<td>Windows注册表键值数据</td>
+</tr>
+<tr>
+<td><code>--reg-type=REGTYPE</code></td>
+<td>Windows注册表项值类型</td>
+</tr>
+</tbody>
+</table>
+<h2 id="General（一般）">General（一般）</h2><pre><code>这些选项可以用来设置一些一般的工作参数。 
+</code></pre><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-t TRAFFICFILE</code></td>
+<td>记录所有HTTP流量到一个文本文件中 </td>
+</tr>
+<tr>
+<td><code>-s SESSIONFILE</code></td>
+<td>保存和恢复检索会话文件的所有数据 </td>
+</tr>
+<tr>
+<td><code>--flush-session</code></td>
+<td>刷新当前目标的会话文件 </td>
+</tr>
+<tr>
+<td><code>--fresh-queries</code></td>
+<td>忽略在会话文件中存储的查询结果 </td>
+</tr>
+<tr>
+<td><code>--eta</code></td>
+<td>显示每个输出的预计到达时间 </td>
+</tr>
+<tr>
+<td><code>--update</code></td>
+<td>更新SqlMap </td>
+</tr>
+<tr>
+<td><code>--save</code></td>
+<td>file保存选项到INI配置文件 </td>
+</tr>
+<tr>
+<td><code>--batch</code></td>
+<td>从不询问用户输入，使用所有默认配置。 </td>
+</tr>
+</tbody>
+</table>
+<h2 id="Miscellaneous（杂项）">Miscellaneous（杂项）</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--beep</code></td>
+<td>发现SQL注入时提醒</td>
+</tr>
+<tr>
+<td><code>--check-payload</code></td>
+<td>IDS对注入payloads的检测测试</td>
+</tr>
+<tr>
+<td><code>--cleanup</code></td>
+<td>SqlMap具体的UDF和表清理DBMS</td>
+</tr>
+<tr>
+<td><code>--forms</code></td>
+<td>对目标URL的解析和测试形式</td>
+</tr>
+<tr>
+<td><code>--gpage=GOOGLEPAGE</code></td>
+<td>从指定的页码使用谷歌dork结果</td>
+</tr>
+<tr>
+<td><code>--page-rank</code></td>
+<td>Google dork结果显示网页排名（PR）</td>
+</tr>
+<tr>
+<td><code>--parse-errors</code></td>
+<td>从响应页面解析数据库管理系统的错误消息</td>
+</tr>
+<tr>
+<td><code>--replicate</code></td>
+<td>复制转储的数据到一个sqlite3数据库</td>
+</tr>
+<tr>
+<td><code>--tor</code></td>
+<td>使用默认的Tor（Vidalia/ Privoxy/ Polipo）代理地址</td>
+</tr>
+<tr>
+<td><code>--wizard</code></td>
+<td>给初级用户的简单向导界面</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/08/10/ubuntu下python-django环境搭建/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          ubuntu下python+django环境搭建
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/08/10/Git使用记录/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git使用记录</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="SqlMap命令-全" data-title="SqlMap命令-全" data-url="http://yoursite.com/2015/08/10/SqlMap命令-全/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"fengge98"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 FengGe
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

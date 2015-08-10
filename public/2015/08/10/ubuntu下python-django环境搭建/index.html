@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>ubuntu下python+django环境搭建 | FengGe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一，首先列出需要安装的东西：
+
+
+名称
+说明
+命令
+
+
+
+
+python2.7
+这个安装就不用多说了linux都会自带的
+
+
+easy_install
+一个能安装python工具的命令
+sudo apt-get install python-setuptools
+
+
+pip
+python包管理工具
+sudo easy install pip
+
+
+git
+版本管理工具实现多人合作开发
+sudo ap">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu下python+django环境搭建">
+<meta property="og:url" content="http://yoursite.com/2015/08/10/ubuntu下python-django环境搭建/index.html">
+<meta property="og:site_name" content="FengGe">
+<meta property="og:description" content="一，首先列出需要安装的东西：
+
+
+名称
+说明
+命令
+
+
+
+
+python2.7
+这个安装就不用多说了linux都会自带的
+
+
+easy_install
+一个能安装python工具的命令
+sudo apt-get install python-setuptools
+
+
+pip
+python包管理工具
+sudo easy install pip
+
+
+git
+版本管理工具实现多人合作开发
+sudo ap">
+<meta property="og:updated_time" content="2015-08-10T05:09:54.853Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ubuntu下python+django环境搭建">
+<meta name="twitter:description" content="一，首先列出需要安装的东西：
+
+
+名称
+说明
+命令
+
+
+
+
+python2.7
+这个安装就不用多说了linux都会自带的
+
+
+easy_install
+一个能安装python工具的命令
+sudo apt-get install python-setuptools
+
+
+pip
+python包管理工具
+sudo easy install pip
+
+
+git
+版本管理工具实现多人合作开发
+sudo ap">
+  
+    <link rel="alternative" href="/atom.xml" title="FengGe" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://i3.tietuku.com/11f86a6e7f812e32.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">FengGe</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">世界有你更精彩</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/LoadRuner/" style="font-size: 10px;">LoadRuner</a> <a href="/tags/SQLMAP/" style="font-size: 10px;">SQLMAP</a> <a href="/tags/XSS/" style="font-size: 10px;">XSS</a> <a href="/tags/django/" style="font-size: 10px;">django</a> <a href="/tags/findpassword/" style="font-size: 10px;">findpassword</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">FengGe</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://i3.tietuku.com/11f86a6e7f812e32.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">FengGe</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">世界有你更精彩</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-ubuntu下python-django环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/10/ubuntu下python-django环境搭建/" class="article-date">
+  	<time datetime="2015-08-10T05:09:36.000Z" itemprop="datePublished">2015-08-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ubuntu下python+django环境搭建
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/django/">django</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一，首先列出需要安装的东西：">一，首先列出需要安装的东西：</h2><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>python2.7</td>
+<td>这个安装就不用多说了linux都会自带的</td>
+</tr>
+<tr>
+<td>easy_install</td>
+<td>一个能安装python工具的命令</td>
+<td><code>sudo apt-get install python-setuptools</code></td>
+</tr>
+<tr>
+<td>pip</td>
+<td>python包管理工具</td>
+<td><code>sudo easy install pip</code></td>
+</tr>
+<tr>
+<td>git</td>
+<td>版本管理工具实现多人合作开发</td>
+<td><code>sudo apt-get install git</code></td>
+</tr>
+<tr>
+<td>django</td>
+<td>项目开发框架（建议先不要安装在全局）</td>
+<td><code>sudo easy install django</code></td>
+</tr>
+<tr>
+<td>virtualenv</td>
+<td>提供一个用于开发的模拟环境</td>
+<td><code>sudo easy installvirtualenv</code></td>
+</tr>
+<tr>
+<td>sublime</td>
+<td>编辑器                                     </td>
+</tr>
+</tbody>
+</table>
+<pre><code>到这里需要安装的东西就没有啦~
+</code></pre><h2 id="二，使用virtualenv建立虚拟开发环境"> 二，使用virtualenv建立虚拟开发环境</h2><p>转到开发目录（cd filename / 打开filename  cd ..  /后退   mkdir filename/ 创建名为filename的文件）用到的3基本个命令<br>执行命令：virtualenvenv                   #创建名为env的环境<br>执行命令：source env/bin/activate   #进入env环境    这时命令行前面会有（env）这个标志<br>执行命令：pipfreeze                          #查看当前env目录下安装包的情况 正常情况下是什么都没有 或是默认安装几个重要包<br>执行命令：pip install django            #安装djangodjango框架安装在env环境中<br>再次执行：pip freeze                          #会发现多了一个django</p>
+<h2 id="三，使用django创建一个工程">三，使用django创建一个工程</h2><p>执行命令：django-admin.py startproject mysite #创建一个名为mysite的django工程<br>进入mysite目录：cd mysite<br>执行命令：python manage.py runserver<br>在浏览器地址栏输入：<a href="http://127.0.0.1:8000/" target="_blank" rel="external">http://127.0.0.1:8000/</a>      #会发现它已经在工作了</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/08/10/loadrunner问题记录/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          loadrunner问题记录
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/08/10/SqlMap命令-全/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SqlMap命令-全</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="ubuntu下python-django环境搭建" data-title="ubuntu下python+django环境搭建" data-url="http://yoursite.com/2015/08/10/ubuntu下python-django环境搭建/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"fengge98"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 FengGe
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
